@@ -28,6 +28,7 @@ class handDetector():
                                                self.mpHands.HAND_CONNECTIONS)
         return img
 
+
     def findPosition(self, img, handNo=0, draw=True):
 
         lmList = []
@@ -62,7 +63,7 @@ def main():
         pTime = cTime
 
         cv2.putText(img, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1,
-                    (0, 255, 255), 1)
+                    (0, 255, 254), 1)
 
         cv2.imshow("Image", img)
         cv2.waitKey(1)
